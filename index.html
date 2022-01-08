@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: grey;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        #navbar {
+            background-color: black;
+            display: flex;
+
+            /* border: red solid 2px; */
+            height: 60px;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+
+
+
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #logo img {
+            height: 50px;
+            padding: 5px;
+            border-radius: 20px;
+
+        }
+
+        #navbar ul li {
+
+            list-style: none;
+
+        }
+
+        #navbar ul li a {
+            padding: 8px 8px;
+            text-decoration: none;
+            color: white;
+            border-radius: 20px;
+        }
+
+        #navbar ul li a:hover {
+            background-color: white;
+            color: black;
+        }
+
+
+
+
+        #container {
+            /* border: 2px red solid; */
+           
+          
+            color: white;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            
+            
+
+        }
+        #container p{
+            opacity: 0.8;
+        }
+
+        #container::before {
+            background: url("../img.jpg") no-repeat center center/ cover ;
+            content: "";
+            position: absolute;
+            height: 90%;
+            width: 120%;
+            z-index: -1;
+          
+        }
+
+        #h {
+            padding: 162px;
+        }
+
+        #survice {
+            /* border: red solid 2px; */
+            height: 160vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+
+
+
+        }
+
+        #white h1 {
+            /* border: 2px solid red; */
+            text-align: center;
+            font-size: 35px;
+            color: white;
+
+        }
+
+        #survice .box {
+            /* border: solid red 2px; */
+            height: 300px;
+            width: 300px;
+            border-radius: 20px;
+            margin: 20px;
+            text-align: center;
+            justify-content: center;
+
+
+
+        } 
+       
+
+        #b-box {
+            display: flex;
+            flex-wrap: wrap;
+            box-shadow: rgb(37, 37, 37);
+            align-content: center;
+            justify-content: center;
+           
+        }
+        .box{
+            background-color: rgb(70, 69, 69);
+            color: white;
+        }
+        .box p{
+            opacity: 0.7;
+        }
+        .box h1{
+            font-size: 30px;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="reload">
+
+        </div>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">survices</a></li>
+            <li><a href="#">about us </a></li>
+        </ul>
+    </nav>
+
+
+
+    <div id="container">
+        <div id="h">
+            <h1>welcome to coding world</h1>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+           <p>Lorem ipsum dolor sit amet consectetur.</p>
+           <p>Lorem ipsum dolor sit amet.</p>
+           
+
+        </div>
+    </div>
+    <section id="survice">
+        <div id="white">
+            <h1> our survices</h1>
+
+        </div>
+
+
+        <div id="b-box">
+            <div class="box">
+                <h1>survices</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus ipsum id tempore eligendi, deserunt
+                    expedita labore dignissimos, commodi nobis, laudantium similique mollitia illum voluptatum. At?</p>
+            </div>
+            <div class="box">
+                <h1>process</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus ipsum id tempore eligendi, deserunt
+                    expedita labore dignissimos, commodi nobis, laudantium similique mollitia illum voluptatum. At?</p>
+            </div>
+            <div class="box">
+                <h1>help</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus ipsum id tempore eligendi, deserunt
+                    expedita labore dignissimos, commodi nobis, laudantium similique mollitia illum voluptatum. At?</p>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
